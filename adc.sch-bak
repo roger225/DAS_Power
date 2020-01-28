@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -87,13 +87,13 @@ F 3 "" H 10450 1400 50  0001 C CNN
 	1    10450 1400
 	1    0    0    -1  
 $EndComp
-Text HLabel 3600 2300 2    50   Input ~ 0
+Text HLabel 3600 2300 2    50   Output ~ 0
 +12V_IN_ADC_OUT
-Text HLabel 8300 2200 2    50   Input ~ 0
+Text HLabel 8300 2200 2    50   Output ~ 0
 +12V_BUS_ADC_OUT
-Text HLabel 3550 5500 2    50   Input ~ 0
+Text HLabel 3550 5500 2    50   Output ~ 0
 +5V_IN_ADC_OUT
-Text HLabel 8200 5400 2    50   Input ~ 0
+Text HLabel 8200 5400 2    50   Output ~ 0
 +5V_BUS_ADC_OUT
 $Comp
 L Device:R R?
