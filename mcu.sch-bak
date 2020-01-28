@@ -13,16 +13,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1300 1100 500  150 
-U 5E300FCE
-F0 "Sheet5E300FCD" 50
-F1 "adc.sch" 50
-$EndSheet
-$Sheet
-S 1400 1900 500  150 
-U 5E300FD5
-F0 "Sheet5E300FD4" 50
-F1 "mcu.sch" 50
-$EndSheet
 $EndSCHEMATC
