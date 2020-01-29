@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -538,4 +538,18 @@ Connection ~ 8150 5400
 Wire Wire Line
 	8250 2200 8300 2200
 Connection ~ 8250 2200
+$Comp
+L Device:R R?
+U 1 1 5E3754F8
+P 2850 3400
+AR Path="/5E300FCE/5E3754F8" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E3754F8" Ref="R?"  Part="1" 
+F 0 "R?" H 2920 3446 50  0000 L CNN
+F 1 "4.7K" H 2920 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2780 3400 50  0001 C CNN
+F 3 "~" H 2850 3400 50  0001 C CNN
+F 4 "R0805" H 2920 3287 31  0000 L CNN "size"
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
