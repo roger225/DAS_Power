@@ -43,7 +43,7 @@ Wire Wire Line
 	1600 1500 1500 1500
 Wire Wire Line
 	1500 1300 1600 1300
-Text HLabel 1600 1300 2    50   Input ~ 0
+Text HLabel 1600 1300 2    50   Output ~ 0
 FanSpeed01
 $Comp
 L Transistor_FET:2N7002 Q?
@@ -112,4 +112,437 @@ $EndComp
 Connection ~ 2550 1200
 Wire Wire Line
 	2450 900  2550 900 
+Text HLabel 3100 1400 2    50   Input ~ 0
+PWM_01
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E334ECD
+P 1300 2650
+F 0 "J?" H 1218 2225 50  0000 C CNN
+F 1 "Conn_01x04" H 1218 2316 50  0000 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 1300 2650 50  0001 C CNN
+F 3 "~" H 1300 2650 50  0001 C CNN
+	1    1300 2650
+	-1   0    0    1   
+$EndComp
+Text GLabel 1600 2650 2    50   Input ~ 0
++12V_BUS
+Wire Wire Line
+	1500 2650 1600 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5E334ED5
+P 1600 2750
+F 0 "#PWR?" H 1600 2500 50  0001 C CNN
+F 1 "GND" H 1605 2577 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2750 1500 2750
+Wire Wire Line
+	1500 2550 1600 2550
+Text HLabel 1600 2550 2    50   Output ~ 0
+FanSpeed02
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5E334EDE
+P 2650 2650
+F 0 "Q?" H 2855 2696 50  0000 L CNN
+F 1 "2N7002" H 2855 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 2575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2650 2650 50  0001 L CNN
+	1    2650 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E334EE4
+P 2550 2950
+F 0 "#PWR?" H 2550 2700 50  0001 C CNN
+F 1 "GND" H 2555 2777 50  0000 C CNN
+F 2 "" H 2550 2950 50  0001 C CNN
+F 3 "" H 2550 2950 50  0001 C CNN
+	1    2550 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 2150 0    50   Input ~ 0
++5V_BUS
+$Comp
+L Device:R R?
+U 1 1 5E334EEC
+P 2900 2800
+AR Path="/5E300FCE/5E334EEC" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E334EEC" Ref="R?"  Part="1" 
+F 0 "R?" H 2970 2846 50  0000 L CNN
+F 1 "10K" H 2970 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 2800 50  0001 C CNN
+F 3 "~" H 2900 2800 50  0001 C CNN
+F 4 "R0805" H 2970 2687 31  0000 L CNN "size"
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2650 2850 2650
+Wire Wire Line
+	2900 2950 2550 2950
+Wire Wire Line
+	2550 2850 2550 2950
+Connection ~ 2550 2950
+Wire Wire Line
+	2900 2650 3100 2650
+Connection ~ 2900 2650
+Wire Wire Line
+	1500 2450 2550 2450
+$Comp
+L Device:R R?
+U 1 1 5E334EFA
+P 2550 2300
+AR Path="/5E300FCE/5E334EFA" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E334EFA" Ref="R?"  Part="1" 
+F 0 "R?" H 2620 2346 50  0000 L CNN
+F 1 "4.7K" H 2620 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2480 2300 50  0001 C CNN
+F 3 "~" H 2550 2300 50  0001 C CNN
+F 4 "R0805" H 2620 2187 31  0000 L CNN "size"
+	1    2550 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 2450
+Wire Wire Line
+	2450 2150 2550 2150
+Text HLabel 3100 2650 2    50   Input ~ 0
+PWM_02
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E33B9B1
+P 1300 3900
+F 0 "J?" H 1218 3475 50  0000 C CNN
+F 1 "Conn_01x04" H 1218 3566 50  0000 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 1300 3900 50  0001 C CNN
+F 3 "~" H 1300 3900 50  0001 C CNN
+	1    1300 3900
+	-1   0    0    1   
+$EndComp
+Text GLabel 1600 3900 2    50   Input ~ 0
++12V_BUS
+Wire Wire Line
+	1500 3900 1600 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E33B9B9
+P 1600 4000
+F 0 "#PWR?" H 1600 3750 50  0001 C CNN
+F 1 "GND" H 1605 3827 50  0000 C CNN
+F 2 "" H 1600 4000 50  0001 C CNN
+F 3 "" H 1600 4000 50  0001 C CNN
+	1    1600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4000 1500 4000
+Wire Wire Line
+	1500 3800 1600 3800
+Text HLabel 1600 3800 2    50   Output ~ 0
+FanSpeed03
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5E33B9C2
+P 2650 3900
+F 0 "Q?" H 2855 3946 50  0000 L CNN
+F 1 "2N7002" H 2855 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 3825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2650 3900 50  0001 L CNN
+	1    2650 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E33B9C8
+P 2550 4200
+F 0 "#PWR?" H 2550 3950 50  0001 C CNN
+F 1 "GND" H 2555 4027 50  0000 C CNN
+F 2 "" H 2550 4200 50  0001 C CNN
+F 3 "" H 2550 4200 50  0001 C CNN
+	1    2550 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 3400 0    50   Input ~ 0
++5V_BUS
+$Comp
+L Device:R R?
+U 1 1 5E33B9D0
+P 2900 4050
+AR Path="/5E300FCE/5E33B9D0" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E33B9D0" Ref="R?"  Part="1" 
+F 0 "R?" H 2970 4096 50  0000 L CNN
+F 1 "10K" H 2970 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 4050 50  0001 C CNN
+F 3 "~" H 2900 4050 50  0001 C CNN
+F 4 "R0805" H 2970 3937 31  0000 L CNN "size"
+	1    2900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3900 2850 3900
+Wire Wire Line
+	2900 4200 2550 4200
+Wire Wire Line
+	2550 4100 2550 4200
+Connection ~ 2550 4200
+Wire Wire Line
+	2900 3900 3100 3900
+Connection ~ 2900 3900
+Wire Wire Line
+	1500 3700 2550 3700
+$Comp
+L Device:R R?
+U 1 1 5E33B9DE
+P 2550 3550
+AR Path="/5E300FCE/5E33B9DE" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E33B9DE" Ref="R?"  Part="1" 
+F 0 "R?" H 2620 3596 50  0000 L CNN
+F 1 "4.7K" H 2620 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2480 3550 50  0001 C CNN
+F 3 "~" H 2550 3550 50  0001 C CNN
+F 4 "R0805" H 2620 3437 31  0000 L CNN "size"
+	1    2550 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 3700
+Wire Wire Line
+	2450 3400 2550 3400
+Text HLabel 3100 3900 2    50   Input ~ 0
+PWM_03
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E33FD59
+P 1300 5100
+F 0 "J?" H 1218 4675 50  0000 C CNN
+F 1 "Conn_01x04" H 1218 4766 50  0000 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 1300 5100 50  0001 C CNN
+F 3 "~" H 1300 5100 50  0001 C CNN
+	1    1300 5100
+	-1   0    0    1   
+$EndComp
+Text GLabel 1600 5100 2    50   Input ~ 0
++12V_BUS
+Wire Wire Line
+	1500 5100 1600 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5E33FD61
+P 1600 5200
+F 0 "#PWR?" H 1600 4950 50  0001 C CNN
+F 1 "GND" H 1605 5027 50  0000 C CNN
+F 2 "" H 1600 5200 50  0001 C CNN
+F 3 "" H 1600 5200 50  0001 C CNN
+	1    1600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5200 1500 5200
+Wire Wire Line
+	1500 5000 1600 5000
+Text HLabel 1600 5000 2    50   Output ~ 0
+FanSpeed04
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5E33FD6A
+P 2650 5100
+F 0 "Q?" H 2855 5146 50  0000 L CNN
+F 1 "2N7002" H 2855 5055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 5025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2650 5100 50  0001 L CNN
+	1    2650 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E33FD70
+P 2550 5400
+F 0 "#PWR?" H 2550 5150 50  0001 C CNN
+F 1 "GND" H 2555 5227 50  0000 C CNN
+F 2 "" H 2550 5400 50  0001 C CNN
+F 3 "" H 2550 5400 50  0001 C CNN
+	1    2550 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 4600 0    50   Input ~ 0
++5V_BUS
+$Comp
+L Device:R R?
+U 1 1 5E33FD78
+P 2900 5250
+AR Path="/5E300FCE/5E33FD78" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E33FD78" Ref="R?"  Part="1" 
+F 0 "R?" H 2970 5296 50  0000 L CNN
+F 1 "10K" H 2970 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 5250 50  0001 C CNN
+F 3 "~" H 2900 5250 50  0001 C CNN
+F 4 "R0805" H 2970 5137 31  0000 L CNN "size"
+	1    2900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5100 2850 5100
+Wire Wire Line
+	2900 5400 2550 5400
+Wire Wire Line
+	2550 5300 2550 5400
+Connection ~ 2550 5400
+Wire Wire Line
+	2900 5100 3100 5100
+Connection ~ 2900 5100
+Wire Wire Line
+	1500 4900 2550 4900
+$Comp
+L Device:R R?
+U 1 1 5E33FD86
+P 2550 4750
+AR Path="/5E300FCE/5E33FD86" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E33FD86" Ref="R?"  Part="1" 
+F 0 "R?" H 2620 4796 50  0000 L CNN
+F 1 "4.7K" H 2620 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2480 4750 50  0001 C CNN
+F 3 "~" H 2550 4750 50  0001 C CNN
+F 4 "R0805" H 2620 4637 31  0000 L CNN "size"
+	1    2550 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 4900
+Wire Wire Line
+	2450 4600 2550 4600
+Text HLabel 3100 5100 2    50   Input ~ 0
+PWM_04
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E348CF3
+P 1300 6300
+F 0 "J?" H 1218 5875 50  0000 C CNN
+F 1 "Conn_01x04" H 1218 5966 50  0000 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 1300 6300 50  0001 C CNN
+F 3 "~" H 1300 6300 50  0001 C CNN
+	1    1300 6300
+	-1   0    0    1   
+$EndComp
+Text GLabel 1600 6300 2    50   Input ~ 0
++12V_BUS
+Wire Wire Line
+	1500 6300 1600 6300
+$Comp
+L power:GND #PWR?
+U 1 1 5E348CFB
+P 1600 6400
+F 0 "#PWR?" H 1600 6150 50  0001 C CNN
+F 1 "GND" H 1605 6227 50  0000 C CNN
+F 2 "" H 1600 6400 50  0001 C CNN
+F 3 "" H 1600 6400 50  0001 C CNN
+	1    1600 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6400 1500 6400
+Wire Wire Line
+	1500 6200 1600 6200
+Text HLabel 1600 6200 2    50   Output ~ 0
+FanSpeed05
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5E348D04
+P 2650 6300
+F 0 "Q?" H 2855 6346 50  0000 L CNN
+F 1 "2N7002" H 2855 6255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 6225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2650 6300 50  0001 L CNN
+	1    2650 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E348D0A
+P 2550 6600
+F 0 "#PWR?" H 2550 6350 50  0001 C CNN
+F 1 "GND" H 2555 6427 50  0000 C CNN
+F 2 "" H 2550 6600 50  0001 C CNN
+F 3 "" H 2550 6600 50  0001 C CNN
+	1    2550 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 5800 0    50   Input ~ 0
++5V_BUS
+$Comp
+L Device:R R?
+U 1 1 5E348D12
+P 2900 6450
+AR Path="/5E300FCE/5E348D12" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E348D12" Ref="R?"  Part="1" 
+F 0 "R?" H 2970 6496 50  0000 L CNN
+F 1 "10K" H 2970 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 6450 50  0001 C CNN
+F 3 "~" H 2900 6450 50  0001 C CNN
+F 4 "R0805" H 2970 6337 31  0000 L CNN "size"
+	1    2900 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6300 2850 6300
+Wire Wire Line
+	2900 6600 2550 6600
+Wire Wire Line
+	2550 6500 2550 6600
+Connection ~ 2550 6600
+Wire Wire Line
+	2900 6300 3100 6300
+Connection ~ 2900 6300
+Wire Wire Line
+	1500 6100 2550 6100
+$Comp
+L Device:R R?
+U 1 1 5E348D20
+P 2550 5950
+AR Path="/5E300FCE/5E348D20" Ref="R?"  Part="1" 
+AR Path="/5E350920/5E348D20" Ref="R?"  Part="1" 
+F 0 "R?" H 2620 5996 50  0000 L CNN
+F 1 "4.7K" H 2620 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2480 5950 50  0001 C CNN
+F 3 "~" H 2550 5950 50  0001 C CNN
+F 4 "R0805" H 2620 5837 31  0000 L CNN "size"
+	1    2550 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 6100
+Wire Wire Line
+	2450 5800 2550 5800
+Text HLabel 3100 6300 2    50   Input ~ 0
+PWM_05
+$Comp
+L Device:CP1 C?
+U 1 1 5E3508B7
+P 4200 1250
+F 0 "C?" H 4315 1341 50  0000 L CNN
+F 1 "CP1" H 4315 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4315 1159 50  0001 L CNN
+F 3 "~" H 4200 1250 50  0001 C CNN
+F 4 "D10mm" H 4315 1159 50  0000 L CNN "size"
+	1    4200 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 1000 2    50   Input ~ 0
++12V_BUS
+Wire Wire Line
+	4200 1100 4200 1000
+$Comp
+L power:GND #PWR?
+U 1 1 5E353613
+P 4200 1400
+F 0 "#PWR?" H 4200 1150 50  0001 C CNN
+F 1 "GND" H 4205 1227 50  0000 C CNN
+F 2 "" H 4200 1400 50  0001 C CNN
+F 3 "" H 4200 1400 50  0001 C CNN
+	1    4200 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
