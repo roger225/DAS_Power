@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -56,5 +56,11 @@ F8 "FanSpeed02" O R 2150 4300 50
 F9 "FanSpeed03" O R 2150 4400 50 
 F10 "FanSpeed04" O R 2150 4500 50 
 F11 "FanSpeed05" O R 2150 4600 50 
+$EndSheet
+$Sheet
+S 2700 950  900  500 
+U 5E3BA3E9
+F0 "Power OR" 50
+F1 "power_or.sch" 50
 $EndSheet
 $EndSCHEMATC
