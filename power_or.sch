@@ -72,8 +72,6 @@ Connection ~ 2600 3250
 Wire Wire Line
 	2950 2950 3150 2950
 Connection ~ 2950 2950
-Wire Wire Line
-	1550 2750 2600 2750
 $Comp
 L Device:R R?
 U 1 1 5E3BCD5A
@@ -88,7 +86,6 @@ F 4 "R0805" H 2670 2487 31  0000 L CNN "size"
 	1    2600 2600
 	1    0    0    -1  
 $EndComp
-Connection ~ 2600 2750
 Wire Wire Line
 	2500 2450 2600 2450
 Text HLabel 3150 2950 2    50   Input ~ 0
@@ -102,6 +99,17 @@ F 1 "LM5050-1" H 4450 3190 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 5100 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm5050-1-q1.pdf" H 5550 2650 50  0001 C CNN
 	1    4450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Current:INA139 U?
+U 1 1 5E3C04AF
+P 6800 3000
+F 0 "U?" H 7144 3046 50  0000 L CNN
+F 1 "INA139" H 7144 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6800 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/ina139" H 6800 3005 50  0001 C CNN
+	1    6800 3000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
