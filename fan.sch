@@ -520,29 +520,140 @@ Text HLabel 3100 6300 2    50   Input ~ 0
 PWM_05
 $Comp
 L Device:CP1 C?
-U 1 1 5E3508B7
-P 4200 1250
-F 0 "C?" H 4315 1341 50  0000 L CNN
-F 1 "CP1" H 4315 1250 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4315 1159 50  0001 L CNN
-F 3 "~" H 4200 1250 50  0001 C CNN
-F 4 "D10mm" H 4315 1159 50  0000 L CNN "size"
-	1    4200 1250
+U 1 1 5E360CD4
+P 5550 1250
+F 0 "C?" H 5665 1341 50  0000 L CNN
+F 1 "100uF" H 5665 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 5665 1159 50  0001 L CNN
+F 3 "~" H 5550 1250 50  0001 C CNN
+F 4 "D10mm" H 5665 1159 50  0000 L CNN "size"
+	1    5550 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 1000 2    50   Input ~ 0
+Text GLabel 5650 1000 2    50   Input ~ 0
 +12V_BUS
 Wire Wire Line
-	4200 1100 4200 1000
+	5550 1100 5550 1000
 $Comp
 L power:GND #PWR?
-U 1 1 5E353613
-P 4200 1400
-F 0 "#PWR?" H 4200 1150 50  0001 C CNN
-F 1 "GND" H 4205 1227 50  0000 C CNN
-F 2 "" H 4200 1400 50  0001 C CNN
-F 3 "" H 4200 1400 50  0001 C CNN
-	1    4200 1400
+U 1 1 5E360CDC
+P 5550 1500
+AR Path="/5E350920/5E360CDC" Ref="#PWR?"  Part="1" 
+AR Path="/5E31859C/5E360CDC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5550 1250 50  0001 C CNN
+F 1 "GND" H 5555 1327 50  0000 C CNN
+F 2 "" H 5550 1500 50  0001 C CNN
+F 3 "" H 5550 1500 50  0001 C CNN
+	1    5550 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E360CE3
+P 5000 1250
+F 0 "C?" H 5115 1341 50  0000 L CNN
+F 1 "100uF" H 5115 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 5115 1159 50  0001 L CNN
+F 3 "~" H 5000 1250 50  0001 C CNN
+F 4 "D10mm" H 5115 1159 50  0000 L CNN "size"
+	1    5000 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 1850 2    50   Input ~ 0
++5V_BUS
+$Comp
+L Device:C C?
+U 1 1 5E360CEB
+P 5000 2100
+AR Path="/5E350920/5E360CEB" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E360CEB" Ref="C?"  Part="1" 
+F 0 "C?" H 5115 2191 50  0000 L CNN
+F 1 "100pF" H 5115 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5038 1950 50  0001 C CNN
+F 3 "~" H 5000 2100 50  0001 C CNN
+F 4 "C0805" H 5115 2009 50  0000 L CNN "size"
+	1    5000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E360CF2
+P 5550 2100
+F 0 "C?" H 5665 2191 50  0000 L CNN
+F 1 "100uF" H 5665 2100 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 5665 2009 50  0001 L CNN
+F 3 "~" H 5550 2100 50  0001 C CNN
+F 4 "D10mm" H 5665 2009 50  0000 L CNN "size"
+	1    5550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E360CF8
+P 5550 2350
+AR Path="/5E350920/5E360CF8" Ref="#PWR?"  Part="1" 
+AR Path="/5E31859C/5E360CF8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5550 2100 50  0001 C CNN
+F 1 "GND" H 5555 2177 50  0000 C CNN
+F 2 "" H 5550 2350 50  0001 C CNN
+F 3 "" H 5550 2350 50  0001 C CNN
+	1    5550 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1950 5000 1850
+Wire Wire Line
+	5000 1850 5550 1850
+Wire Wire Line
+	5550 1950 5550 1850
+Wire Wire Line
+	5550 1000 5000 1000
+Wire Wire Line
+	5000 1000 5000 1100
+Wire Wire Line
+	5550 1400 5550 1500
+Wire Wire Line
+	5550 1500 5000 1500
+Wire Wire Line
+	5000 1500 5000 1400
+Connection ~ 5550 1500
+Wire Wire Line
+	5550 1000 5650 1000
+Connection ~ 5550 1000
+Wire Wire Line
+	5650 1850 5550 1850
+Connection ~ 5550 1850
+Wire Wire Line
+	5550 2250 5550 2350
+Wire Wire Line
+	5000 2250 5000 2350
+Wire Wire Line
+	5000 2350 5550 2350
+Connection ~ 5550 2350
+Text Notes 4400 6300 0    50   ~ 0
+https://electronics.stackexchange.com/questions/60427/calculating-the-pulldown-resistance-for-a-given-mosfets-gate
+$Comp
+L Device:C C?
+U 1 1 5E3AF75C
+P 4500 1250
+AR Path="/5E350920/5E3AF75C" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E3AF75C" Ref="C?"  Part="1" 
+F 0 "C?" H 4615 1341 50  0000 L CNN
+F 1 "100pF" H 4615 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4538 1100 50  0001 C CNN
+F 3 "~" H 4500 1250 50  0001 C CNN
+F 4 "C0805" H 4615 1159 50  0000 L CNN "size"
+	1    4500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1000 4500 1000
+Wire Wire Line
+	4500 1000 4500 1100
+Connection ~ 5000 1000
+Wire Wire Line
+	4500 1400 4500 1500
+Wire Wire Line
+	4500 1500 5000 1500
+Connection ~ 5000 1500
 $EndSCHEMATC

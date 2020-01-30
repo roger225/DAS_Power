@@ -313,4 +313,432 @@ Wire Wire Line
 Connection ~ 1050 4400
 Wire Wire Line
 	1050 4400 1050 4500
+Text GLabel 4750 1000 2    50   Input ~ 0
++12V_BUS
+$Comp
+L power:GND #PWR?
+U 1 1 5E3485DB
+P 4650 1500
+AR Path="/5E350920/5E3485DB" Ref="#PWR?"  Part="1" 
+AR Path="/5E31859C/5E3485DB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 1250 50  0001 C CNN
+F 1 "GND" H 4655 1327 50  0000 C CNN
+F 2 "" H 4650 1500 50  0001 C CNN
+F 3 "" H 4650 1500 50  0001 C CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1500 4100 1500
+Connection ~ 4650 1500
+Connection ~ 4650 1000
+Wire Wire Line
+	4650 1000 4750 1000
+Wire Wire Line
+	4650 1000 4100 1000
+Wire Wire Line
+	4650 1400 4650 1500
+Wire Wire Line
+	4100 1500 4100 1400
+Wire Wire Line
+	4100 1000 4100 1100
+$Comp
+L Device:CP1 C?
+U 1 1 5E3485E2
+P 4100 1250
+AR Path="/5E350920/5E3485E2" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E3485E2" Ref="C?"  Part="1" 
+F 0 "C?" H 4215 1341 50  0000 L CNN
+F 1 "100uF" H 4215 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4215 1159 50  0001 L CNN
+F 3 "~" H 4100 1250 50  0001 C CNN
+F 4 "D10mm" H 4215 1159 50  0000 L CNN "size"
+	1    4100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1100 4650 1000
+$Comp
+L Device:CP1 C?
+U 1 1 5E3485D3
+P 4650 1250
+AR Path="/5E350920/5E3485D3" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E3485D3" Ref="C?"  Part="1" 
+F 0 "C?" H 4765 1341 50  0000 L CNN
+F 1 "100uF" H 4765 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4765 1159 50  0001 L CNN
+F 3 "~" H 4650 1250 50  0001 C CNN
+F 4 "D10mm" H 4765 1159 50  0000 L CNN "size"
+	1    4650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1500 3000 1500
+Connection ~ 3550 1000
+Wire Wire Line
+	3550 1000 3000 1000
+Wire Wire Line
+	3550 1400 3550 1500
+Wire Wire Line
+	3000 1500 3000 1400
+Wire Wire Line
+	3000 1000 3000 1100
+$Comp
+L Device:CP1 C?
+U 1 1 5E366A6D
+P 3000 1250
+AR Path="/5E350920/5E366A6D" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E366A6D" Ref="C?"  Part="1" 
+F 0 "C?" H 3115 1341 50  0000 L CNN
+F 1 "100uF" H 3115 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 3115 1159 50  0001 L CNN
+F 3 "~" H 3000 1250 50  0001 C CNN
+F 4 "D10mm" H 3115 1159 50  0000 L CNN "size"
+	1    3000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1100 3550 1000
+$Comp
+L Device:CP1 C?
+U 1 1 5E366A75
+P 3550 1250
+AR Path="/5E350920/5E366A75" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E366A75" Ref="C?"  Part="1" 
+F 0 "C?" H 3665 1341 50  0000 L CNN
+F 1 "100uF" H 3665 1250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 3665 1159 50  0001 L CNN
+F 3 "~" H 3550 1250 50  0001 C CNN
+F 4 "D10mm" H 3665 1159 50  0000 L CNN "size"
+	1    3550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1500 4100 1500
+Connection ~ 3550 1500
+Connection ~ 4100 1500
+Wire Wire Line
+	3550 1000 4100 1000
+Connection ~ 4100 1000
+Text GLabel 4750 2000 2    50   Input ~ 0
++12V_BUS
+$Comp
+L power:GND #PWR?
+U 1 1 5E376CFE
+P 4650 2500
+AR Path="/5E350920/5E376CFE" Ref="#PWR?"  Part="1" 
+AR Path="/5E31859C/5E376CFE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 2250 50  0001 C CNN
+F 1 "GND" H 4655 2327 50  0000 C CNN
+F 2 "" H 4650 2500 50  0001 C CNN
+F 3 "" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2500 4100 2500
+Connection ~ 4650 2500
+Connection ~ 4650 2000
+Wire Wire Line
+	4650 2000 4750 2000
+Wire Wire Line
+	4650 2000 4100 2000
+Wire Wire Line
+	4650 2400 4650 2500
+Wire Wire Line
+	4100 2500 4100 2400
+Wire Wire Line
+	4100 2000 4100 2100
+Wire Wire Line
+	4650 2100 4650 2000
+Wire Wire Line
+	3550 2500 3000 2500
+Connection ~ 3550 2000
+Wire Wire Line
+	3550 2000 3000 2000
+Wire Wire Line
+	3550 2400 3550 2500
+Wire Wire Line
+	3000 2500 3000 2400
+Wire Wire Line
+	3000 2000 3000 2100
+Wire Wire Line
+	3550 2100 3550 2000
+Wire Wire Line
+	3550 2500 4100 2500
+Connection ~ 3550 2500
+Connection ~ 4100 2500
+Wire Wire Line
+	3550 2000 4100 2000
+Connection ~ 4100 2000
+$Comp
+L Device:C C?
+U 1 1 5E37D6FA
+P 3000 2250
+AR Path="/5E350920/5E37D6FA" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E37D6FA" Ref="C?"  Part="1" 
+F 0 "C?" H 3115 2341 50  0000 L CNN
+F 1 "100pF" H 3115 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 2100 50  0001 C CNN
+F 3 "~" H 3000 2250 50  0001 C CNN
+F 4 "C0805" H 3115 2159 50  0000 L CNN "size"
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E37DFBE
+P 3550 2250
+AR Path="/5E350920/5E37DFBE" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E37DFBE" Ref="C?"  Part="1" 
+F 0 "C?" H 3665 2341 50  0000 L CNN
+F 1 "100pF" H 3665 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3588 2100 50  0001 C CNN
+F 3 "~" H 3550 2250 50  0001 C CNN
+F 4 "C0805" H 3665 2159 50  0000 L CNN "size"
+	1    3550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E37E41B
+P 4100 2250
+AR Path="/5E350920/5E37E41B" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E37E41B" Ref="C?"  Part="1" 
+F 0 "C?" H 4215 2341 50  0000 L CNN
+F 1 "100pF" H 4215 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4138 2100 50  0001 C CNN
+F 3 "~" H 4100 2250 50  0001 C CNN
+F 4 "C0805" H 4215 2159 50  0000 L CNN "size"
+	1    4100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E37E812
+P 4650 2250
+AR Path="/5E350920/5E37E812" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E37E812" Ref="C?"  Part="1" 
+F 0 "C?" H 4765 2341 50  0000 L CNN
+F 1 "100pF" H 4765 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 2100 50  0001 C CNN
+F 3 "~" H 4650 2250 50  0001 C CNN
+F 4 "C0805" H 4765 2159 50  0000 L CNN "size"
+	1    4650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E38FFE9
+P 4650 4000
+AR Path="/5E350920/5E38FFE9" Ref="#PWR?"  Part="1" 
+AR Path="/5E31859C/5E38FFE9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 3750 50  0001 C CNN
+F 1 "GND" H 4655 3827 50  0000 C CNN
+F 2 "" H 4650 4000 50  0001 C CNN
+F 3 "" H 4650 4000 50  0001 C CNN
+	1    4650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4000 4100 4000
+Connection ~ 4650 4000
+Connection ~ 4650 3500
+Wire Wire Line
+	4650 3500 4750 3500
+Wire Wire Line
+	4650 3500 4100 3500
+Wire Wire Line
+	4650 3900 4650 4000
+Wire Wire Line
+	4100 4000 4100 3900
+Wire Wire Line
+	4100 3500 4100 3600
+$Comp
+L Device:CP1 C?
+U 1 1 5E38FFF8
+P 4100 3750
+AR Path="/5E350920/5E38FFF8" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E38FFF8" Ref="C?"  Part="1" 
+F 0 "C?" H 4215 3841 50  0000 L CNN
+F 1 "100uF" H 4215 3750 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4215 3659 50  0001 L CNN
+F 3 "~" H 4100 3750 50  0001 C CNN
+F 4 "D10mm" H 4215 3659 50  0000 L CNN "size"
+	1    4100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3600 4650 3500
+$Comp
+L Device:CP1 C?
+U 1 1 5E390000
+P 4650 3750
+AR Path="/5E350920/5E390000" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E390000" Ref="C?"  Part="1" 
+F 0 "C?" H 4765 3841 50  0000 L CNN
+F 1 "100uF" H 4765 3750 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4765 3659 50  0001 L CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+F 4 "D10mm" H 4765 3659 50  0000 L CNN "size"
+	1    4650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4000 3000 4000
+Connection ~ 3550 3500
+Wire Wire Line
+	3550 3500 3000 3500
+Wire Wire Line
+	3550 3900 3550 4000
+Wire Wire Line
+	3000 4000 3000 3900
+Wire Wire Line
+	3000 3500 3000 3600
+$Comp
+L Device:CP1 C?
+U 1 1 5E39000D
+P 3000 3750
+AR Path="/5E350920/5E39000D" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E39000D" Ref="C?"  Part="1" 
+F 0 "C?" H 3115 3841 50  0000 L CNN
+F 1 "100uF" H 3115 3750 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 3115 3659 50  0001 L CNN
+F 3 "~" H 3000 3750 50  0001 C CNN
+F 4 "D10mm" H 3115 3659 50  0000 L CNN "size"
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3600 3550 3500
+$Comp
+L Device:CP1 C?
+U 1 1 5E390015
+P 3550 3750
+AR Path="/5E350920/5E390015" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E390015" Ref="C?"  Part="1" 
+F 0 "C?" H 3665 3841 50  0000 L CNN
+F 1 "100uF" H 3665 3750 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 3665 3659 50  0001 L CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+F 4 "D10mm" H 3665 3659 50  0000 L CNN "size"
+	1    3550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4000 4100 4000
+Connection ~ 3550 4000
+Connection ~ 4100 4000
+Wire Wire Line
+	3550 3500 4100 3500
+Connection ~ 4100 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5E390021
+P 4650 5000
+AR Path="/5E350920/5E390021" Ref="#PWR?"  Part="1" 
+AR Path="/5E31859C/5E390021" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 4750 50  0001 C CNN
+F 1 "GND" H 4655 4827 50  0000 C CNN
+F 2 "" H 4650 5000 50  0001 C CNN
+F 3 "" H 4650 5000 50  0001 C CNN
+	1    4650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5000 4100 5000
+Connection ~ 4650 5000
+Connection ~ 4650 4500
+Wire Wire Line
+	4650 4500 4750 4500
+Wire Wire Line
+	4650 4500 4100 4500
+Wire Wire Line
+	4650 4900 4650 5000
+Wire Wire Line
+	4100 5000 4100 4900
+Wire Wire Line
+	4100 4500 4100 4600
+Wire Wire Line
+	4650 4600 4650 4500
+Wire Wire Line
+	3550 5000 3000 5000
+Connection ~ 3550 4500
+Wire Wire Line
+	3550 4500 3000 4500
+Wire Wire Line
+	3550 4900 3550 5000
+Wire Wire Line
+	3000 5000 3000 4900
+Wire Wire Line
+	3000 4500 3000 4600
+Wire Wire Line
+	3550 4600 3550 4500
+Wire Wire Line
+	3550 5000 4100 5000
+Connection ~ 3550 5000
+Connection ~ 4100 5000
+Wire Wire Line
+	3550 4500 4100 4500
+Connection ~ 4100 4500
+$Comp
+L Device:C C?
+U 1 1 5E39003D
+P 3000 4750
+AR Path="/5E350920/5E39003D" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E39003D" Ref="C?"  Part="1" 
+F 0 "C?" H 3115 4841 50  0000 L CNN
+F 1 "100pF" H 3115 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 4600 50  0001 C CNN
+F 3 "~" H 3000 4750 50  0001 C CNN
+F 4 "C0805" H 3115 4659 50  0000 L CNN "size"
+	1    3000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E390044
+P 3550 4750
+AR Path="/5E350920/5E390044" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E390044" Ref="C?"  Part="1" 
+F 0 "C?" H 3665 4841 50  0000 L CNN
+F 1 "100pF" H 3665 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3588 4600 50  0001 C CNN
+F 3 "~" H 3550 4750 50  0001 C CNN
+F 4 "C0805" H 3665 4659 50  0000 L CNN "size"
+	1    3550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E39004B
+P 4100 4750
+AR Path="/5E350920/5E39004B" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E39004B" Ref="C?"  Part="1" 
+F 0 "C?" H 4215 4841 50  0000 L CNN
+F 1 "100pF" H 4215 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4138 4600 50  0001 C CNN
+F 3 "~" H 4100 4750 50  0001 C CNN
+F 4 "C0805" H 4215 4659 50  0000 L CNN "size"
+	1    4100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E390052
+P 4650 4750
+AR Path="/5E350920/5E390052" Ref="C?"  Part="1" 
+AR Path="/5E31859C/5E390052" Ref="C?"  Part="1" 
+F 0 "C?" H 4765 4841 50  0000 L CNN
+F 1 "100pF" H 4765 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 4600 50  0001 C CNN
+F 3 "~" H 4650 4750 50  0001 C CNN
+F 4 "C0805" H 4765 4659 50  0000 L CNN "size"
+	1    4650 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 3500 2    50   Input ~ 0
++5V_BUS
+Text GLabel 4750 4500 2    50   Input ~ 0
++5V_BUS
 $EndSCHEMATC
